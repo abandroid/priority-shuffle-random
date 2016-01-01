@@ -33,12 +33,12 @@ class PriorityShuffleRandomTest extends PHPUnit_Framework_TestCase
                     break;
             }
             $random->add($value, $priority);
-            for ($p = 0; $p < $priority; $p++) {
+            for ($p = 0; $p < $priority; ++$p) {
                 $values[] = $value;
             }
         }
 
-        for ($i = 0; $i < 14; $i++) {
+        for ($i = 0; $i < 14; ++$i) {
             $value = $random->next();
             $index = array_search($value, $values);
             $this->assertTrue($index !== false);

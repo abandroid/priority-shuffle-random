@@ -6,6 +6,7 @@ Priority Shuffle Random
 [![Latest Stable Version](http://img.shields.io/packagist/v/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
 [![Build Status](http://img.shields.io/travis/endroid/PriorityShuffleRandom.svg)](http://travis-ci.org/endroid/PriorityShuffleRandom)
 [![Total Downloads](http://img.shields.io/packagist/dt/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
+[![Monthly Downloads](http://img.shields.io/packagist/dm/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
 [![License](http://img.shields.io/packagist/l/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
 
 This library extends the basic random functionality by ensuring that the
@@ -43,9 +44,9 @@ for ($i = 0; $i < 12; $i++) {
 
 ## Versioning
 
-Version numbers follow the MAJOR.MINOR.PATCH scheme. Backwards compatible
-changes will be kept to a minimum but be aware that these can occur. Lock
-your dependencies for production and test your code when upgrading.
+Version numbers follow the MAJOR.MINOR.PATCH scheme. Backwards compatibility
+breaking changes will be kept to a minimum but be aware that these can occur.
+Lock your dependencies for production and test your code when upgrading.
 
 ## License
 

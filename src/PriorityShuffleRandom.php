@@ -33,7 +33,7 @@ class PriorityShuffleRandom
      *
      * @param array $items
      */
-    public function __construct(array $items = array())
+    public function __construct(array $items = [])
     {
         foreach ($items as $item) {
             $this->add($item);
@@ -91,7 +91,7 @@ class PriorityShuffleRandom
     {
         $this->validate();
 
-        $shuffledItems = array();
+        $shuffledItems = [];
 
         foreach ($this->itemsByPriority as $priority => $items) {
             shuffle($items);
@@ -101,7 +101,7 @@ class PriorityShuffleRandom
                     $minInsertIndex = ($chunkSize + 1) * $i;
                     $maxInsertIndex = max(0, $minInsertIndex + $chunkSize - 1);
                     $insertIndex = mt_rand($minInsertIndex, $maxInsertIndex);
-                    array_splice($shuffledItems, $insertIndex, 0, array($item));
+                    array_splice($shuffledItems, $insertIndex, 0, [$item]);
                 }
             }
         }

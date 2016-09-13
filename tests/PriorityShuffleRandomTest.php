@@ -16,7 +16,7 @@ class PriorityShuffleRandomTest extends PHPUnit_Framework_TestCase
 {
     public function testPriorityShuffleRandom()
     {
-        $values = array();
+        $values = [];
 
         $random = new PriorityShuffleRandom();
 

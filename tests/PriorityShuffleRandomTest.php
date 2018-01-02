@@ -41,10 +41,10 @@ class PriorityShuffleRandomTest extends PHPUnit_Framework_TestCase
         for ($i = 0; $i < 14; ++$i) {
             $value = $random->next();
             $index = array_search($value, $values);
-            $this->assertTrue($index !== false);
+            $this->assertTrue(false !== $index);
             unset($values[$index]);
         }
 
-        $this->assertTrue(count($values) == 0);
+        $this->assertTrue(0 == count($values));
     }
 }

@@ -75,7 +75,7 @@ class PriorityShuffleRandom
         $priorityMax = 0;
 
         foreach ($this->itemsByPriority as $priority => $items) {
-            if ($priority != 1 && $priorityMax != 0 && $priority > $priorityMax) {
+            if (1 != $priority && 0 != $priorityMax && $priority > $priorityMax) {
                 throw new PriorityTooHighException($priority, $priorityMax);
             }
             $priorityMax += $priority * count($items);
@@ -116,7 +116,7 @@ class PriorityShuffleRandom
      */
     public function next()
     {
-        if (count($this->items) == 0) {
+        if (0 == count($this->items)) {
             $this->shuffle();
         }
 

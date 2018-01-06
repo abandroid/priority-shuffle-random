@@ -10,9 +10,9 @@
 namespace Endroid\PriorityShuffleRandom\Tests\ShuffleRandomTest;
 
 use Endroid\PriorityShuffleRandom\PriorityShuffleRandom;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class PriorityShuffleRandomTest extends PHPUnit_Framework_TestCase
+class PriorityShuffleRandomTest extends TestCase
 {
     public function testPriorityShuffleRandom()
     {

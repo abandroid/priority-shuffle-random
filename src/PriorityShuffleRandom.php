@@ -116,7 +116,7 @@ class PriorityShuffleRandom
      */
     public function next()
     {
-        if (0 == count($this->items)) {
+        if (!is_array($this->items) || 0 === count($this->items)) {
             $this->shuffle();
         }
 

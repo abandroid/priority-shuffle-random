@@ -98,7 +98,7 @@ class PriorityShuffleRandom
         foreach ($this->itemsByPriority as $priority => $items) {
             shuffle($items);
             foreach ($items as $item) {
-                $chunkSize = ceil(count($shuffledItems) / $priority);
+                $chunkSize = intval(ceil(count($shuffledItems) / $priority));
                 for ($i = 0; $i < $priority; ++$i) {
                     $minInsertIndex = ($chunkSize + 1) * $i;
                     $maxInsertIndex = max(0, $minInsertIndex + $chunkSize - 1);

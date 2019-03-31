@@ -13,17 +13,7 @@ namespace Endroid\PriorityShuffleRandom;
 
 interface PrioritizableInterface
 {
-    /**
-     * Returns the value.
-     *
-     * @return mixed
-     */
     public function getValue();
 
-    /**
-     * Returns the priority.
-     *
-     * @return int
-     */
-    public function getPriority();
+    public function getPriority(): int;
 }

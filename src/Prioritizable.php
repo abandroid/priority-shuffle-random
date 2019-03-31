@@ -18,16 +18,7 @@ class Prioritizable implements PrioritizableInterface
 {
     use PrioritizableTrait;
 
-    /**
-     * Creates a new instance.
-     *
-     * @param mixed $value
-     * @param int   $priority
-     *
-     * @throws PriorityNotNumericException
-     * @throws PriorityNotPositiveException
-     */
-    public function __construct($value, $priority = 1)
+    public function __construct($value, int $priority = 1)
     {
         if (!is_numeric($priority)) {
             throw new PriorityNotNumericException($priority);
@@ -41,12 +32,7 @@ class Prioritizable implements PrioritizableInterface
         $this->priority = $priority;
     }
 
-    /**
-     * Returns the string representation.
-     *
-     * @return string
-     */
-    public function __toString()
+    public function __toString(): string
     {
         return $this->value.' ['.$this->priority.']';
     }

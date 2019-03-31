@@ -13,13 +13,7 @@ namespace Endroid\PriorityShuffleRandom\Exception;
 
 class PriorityTooHighException extends InvalidPriorityException
 {
-    /**
-     * Class constructor.
-     *
-     * @param int $priority
-     * @param int $priorityMax
-     */
-    public function __construct($priority, $priorityMax)
+    public function __construct(int $priority, int $priorityMax)
     {
         parent::__construct('Priority should be '.$priorityMax.' max: '.$priority.' given');
     }

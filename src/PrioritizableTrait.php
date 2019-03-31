@@ -13,32 +13,15 @@ namespace Endroid\PriorityShuffleRandom;
 
 trait PrioritizableTrait
 {
-    /**
-     * @var mixed
-     */
-    protected $value;
+    private $value;
+    private $priority;
 
-    /**
-     * @var int
-     */
-    protected $priority;
-
-    /**
-     * Returns the value.
-     *
-     * @return mixed
-     */
     public function getValue()
     {
         return $this->value;
     }
 
-    /**
-     * Returns the priority.
-     *
-     * @return int
-     */
-    public function getPriority()
+    public function getPriority(): int
     {
         return $this->priority;
     }

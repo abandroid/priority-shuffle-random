@@ -44,14 +44,6 @@ class PriorityShuffleRandom
         $this->validated = false;
     }
 
-    /**
-     * Adds an item.
-     *
-     * @param mixed $item
-     * @param int   $priority
-     *
-     * @return $this
-     */
     public function add($item, $priority = 1)
     {
         if (!$item instanceof Prioritizable) {
@@ -65,10 +57,7 @@ class PriorityShuffleRandom
         return $this;
     }
 
-    /**
-     * Validates all items.
-     */
-    protected function validate()
+    protected function validate(): void
     {
         if ($this->validated) {
             return;
@@ -86,10 +75,7 @@ class PriorityShuffleRandom
         $this->validated = true;
     }
 
-    /**
-     * Shuffles all items.
-     */
-    public function shuffle()
+    public function shuffle(): void
     {
         $this->validate();
 
@@ -111,11 +97,6 @@ class PriorityShuffleRandom
         $this->items = $shuffledItems;
     }
 
-    /**
-     * Returns the next value.
-     *
-     * @return mixed
-     */
     public function next()
     {
         if (!is_array($this->items) || 0 === count($this->items)) {

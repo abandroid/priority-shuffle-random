@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Endroid\PriorityShuffleRandom;
 
-use Endroid\PriorityShuffleRandom\Exception\InvalidPriorityException;
+use Endroid\PriorityShuffleRandom\Exception\NegativePriorityException;
 
 class Prioritizable implements PrioritizableInterface
 {
@@ -19,8 +19,8 @@ class Prioritizable implements PrioritizableInterface
 
     public function __construct($value, int $priority = 1)
     {
-        if (!is_numeric($priority) || $priority <= 0) {
-            throw new InvalidPriorityException($priority);
+        if ($priority <= 0) {
+            throw new NegativePriorityException($priority);
         }
 
         $this->value = $value;

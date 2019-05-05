@@ -105,6 +105,10 @@ class PriorityShuffleRandom
 
         $item = array_shift($this->items);
 
+        if (!$item instanceof PrioritizableInterface) {
+            throw new \Exception('Unable to retrieve next prioritizable');
+        }
+
         return $item->getValue();
     }
 }

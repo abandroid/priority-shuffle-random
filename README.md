@@ -3,7 +3,7 @@
 *By [endroid](https://endroid.nl/)*
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
-[![Build Status](http://img.shields.io/travis/endroid/priority-shuffle-random.svg)](http://travis-ci.org/endroid/priority-shuffle-random)
+[![Build Status](https://github.com/endroid/priority-shuffle-random/workflows/CI/badge.svg)](https://github.com/endroid/priority-shuffle-random/actions)
 [![Total Downloads](http://img.shields.io/packagist/dt/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
 [![Monthly Downloads](http://img.shields.io/packagist/dm/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)
 [![License](http://img.shields.io/packagist/l/endroid/priority-shuffle-random.svg)](https://packagist.org/packages/endroid/priority-shuffle-random)

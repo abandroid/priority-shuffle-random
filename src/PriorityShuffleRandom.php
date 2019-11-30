@@ -32,8 +32,6 @@ class PriorityShuffleRandom
 
     /**
      * Creates a new instance.
-     *
-     * @param array $items
      */
     public function __construct(array $items = [])
     {

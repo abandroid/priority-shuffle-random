@@ -15,31 +15,19 @@ use Endroid\PriorityShuffleRandom\Exception\PriorityTooHighException;
 
 class PriorityShuffleRandom
 {
-    /**
-     * @var Prioritizable[]
-     */
-    protected $items;
+    private $items;
 
-    /**
-     * @var array
-     */
-    protected $itemsByPriority;
+    /** @var array[int, int] */
+    private $itemsByPriority;
 
-    /**
-     * @var bool
-     */
-    protected $validated;
+    /** @var bool */
+    private $validated = false;
 
-    /**
-     * Creates a new instance.
-     */
     public function __construct(array $items = [])
     {
         foreach ($items as $item) {
             $this->add($item);
         }
-
-        $this->validated = false;
     }
 
     public function add($item, $priority = 1)
